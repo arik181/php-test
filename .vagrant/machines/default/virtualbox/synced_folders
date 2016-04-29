@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/Code":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/Code","hostpath":"/home/developer2/Git/php-test","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/developer2/Git/php-test","disabled":false,"__vagrantfile":true}}}
