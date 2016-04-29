@@ -11,17 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::auth();
+Route::group(['middleware' => 'web'], function () {
+    Route::get('/', function () { return view('welcome'); });
+    Route::get('/home', 'HomeController@index');
 });
 
-Route::get('login',  'Auth\AuthController@index');
-Route::post('login', 'Auth\AuthController@postLogin');
 
-Route::get('register',  'Auth@getRegister');
-Route::post('register', 'Auth@postRegister');
-
-
-Route::auth();
-
-Route::get('/home', 'HomeController@index');
